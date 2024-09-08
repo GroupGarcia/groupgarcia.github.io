@@ -7,6 +7,13 @@
     <title>Group Garcia</title>
     <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="estilo.css">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://groupgarcia.github.io">
+    <meta property="og:title" content="Datos del Motociclista">
+    <meta property="og:description" content="Descripción que podrán leer en esta sección cuando busques la página">
+    <meta property="og:image" content="https://groupgarcia.github.io/images/logo.jpg">
+
 </head>
 <body>
     <div class="contenedor-header">
@@ -16,16 +23,20 @@
             </div>
             <nav id="nav">
                 <ul>
-                <li><a href="#inicio">INICIO</a></li>
-                <li><a href="#nosotros">ACERCA DE NOSOTROS</a></li>
+                    <li><a href="#inicio">INICIO</a></li>
+                    <li><a href="#nosotros">ACERCA DE NOSOTROS</a></li>
                 </ul>
             </nav>
             <div class="nav-responsive">
                 <i class="fa-solid fa-bars"></i>
             </div>
+            <div class="nav-menu">
+                <a href="#inicio">INICIO</a>
+                <a href="#nosotros">ACERCA DE NOSOTROS</a>
+            </div>
         </header>
     </div>
-    
+
     <section id="inicio" class="inicio">
         <div class="contenido-banner">
             <div class="contenedor-img">
@@ -40,17 +51,14 @@
             <h2>O+</h2>
             <h3>Señas Particulares</h3>
             <h2>Tatuaje en el brazo derecho</h2>
-            <h3>Numeros de emergencia</h3>
+            <h3>Números de emergencia</h3>
             <h2>55XXXXXXXX</h2>
             <h2>55XXXXXXXX</h2>
             <h2>55XXXXXXXX</h2>
-
-
-
         </div>
     </section>
 
-<section id="nosotros" class="nosotros">
+    <section id="nosotros" class="nosotros">
         <div class="contenido-seccion">
             <h2>Acerca de Nosotros</h2>
             <p><span>Hola, somos Group Garcia.</span> Entendemos que la seguridad de los motociclistas no solo depende de la prudencia en la carretera, sino también de la preparación para lo inesperado. Con nuestra innovadora solución basada en tecnología QR, garantizamos que cada viaje esté respaldado por una red de protección en caso de emergencia. Al integrar datos vitales en un código QR, proporcionamos a las autoridades una herramienta rápida y eficaz para actuar en situaciones críticas. Porque para nosotros, tu seguridad es nuestra prioridad.</p>
@@ -72,5 +80,12 @@
             </div>
         </div>
     </section>
+
+    <script>
+        document.querySelector('.nav-responsive').addEventListener('click', function() {
+            document.querySelector('.nav-responsive').classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
