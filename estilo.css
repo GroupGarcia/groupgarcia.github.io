@@ -64,6 +64,7 @@ html {
     display: none;
 }
 
+/* Menú desplegable */
 .nav-menu {
     display: none; /* Oculta el menú por defecto en dispositivos móviles */
     flex-direction: column;
@@ -77,9 +78,14 @@ html {
 
 .nav-menu a {
     color: #fff;
-    padding: 10px;
+    padding: 15px 0;
     display: block;
     text-decoration: none;
+    border-bottom: 1px solid #333; /* Línea divisoria entre los ítems */
+}
+
+.nav-menu a:last-child {
+    border-bottom: none; /* Quita la línea divisoria del último ítem */
 }
 
 .nav-menu a:hover {
@@ -217,7 +223,7 @@ html {
         display: block;
     }
 
-    .nav-responsive.active + .nav-menu {
+    .nav-menu.active {
         display: flex; /* Muestra el menú cuando se activa */
     }
 
