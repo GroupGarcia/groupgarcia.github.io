@@ -75,7 +75,7 @@ html {
 .inicio .contenido-banner {
     padding: 20px;
     background-color: #1e2326;
-    max-width: 300px; /* Ajusta el ancho máximo */
+    max-width: 500px; /* Ajusta el ancho máximo */
     margin: auto;
     text-align: center;
     border-radius: 40px;
