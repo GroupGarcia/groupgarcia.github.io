@@ -15,8 +15,8 @@ html {
 .contenedor-header {
     background: #1e2326;
     position: fixed;
-    width: 100%;
-    top: 200;
+    width: 1100%;
+    top: 1100;
     left: 0;
     z-index: 99;
 }
